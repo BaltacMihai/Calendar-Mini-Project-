@@ -1,249 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Orar</title>
 </head>
+
 <body>
-    <div class="container">
+    <div class="container__desktop">
         <div class="card">
-            <h1 id="date">Date</h1>
-            <h2 id="day">Day</h2>
-            <h3 id="hour">Hour</h3>
-            <h3 id="subject">Subject</h3>
-            <h4 id="teacher">Teacher</h4>
-            <a href="" id="zoom-link" target="_blank">Zoom</a>
+            <div class="details__date">
+                <h1 id="date">Date</h1>
+                <h2 id="day">Day</h2>
+            </div>
+            <div class="details__subject">
+                <h2 id="subject">Subject</h2>
+                <h3 id="hour">Hour</h3>
+
+            </div>
+            <div class="details__link">
+                <h2 id="teacher">Teacher</h2>
+                <a href="" id="zoom-link" target="_blank">Zoom</a>
+            </div>
+
+
         </div>
         <div class="calendar">
-        <ol class="day-names">
-          <li>
-            Sunday
-          </li>
-          <li>
-            Monday
-          </li>
-          <li>
-            Tuesday
-          </li>
-          <li>
-            Wednesday
-          </li>
-          <li>
-            Thursday
-          </li>
-          <li>
-            Friday
-          </li>
-          <li>
-            Saturday
-          </li>
-        </ol>
-        <ol class="days">
-          <li>
-            <div class="date">
-              1
+            <ol class="day-names">
+                <li>
+                    Luni
+                </li>
+                <li>
+                    Marti
+
+                </li>
+                <li>
+                    Miercuri
+
+                </li>
+                <li>
+                    Joi
+                </li>
+                <li>
+                    Vineri
+                </li>
+                <li>
+                    Sambata
+                </li>
+                <li>
+                    Duminica
+                </li>
+            </ol>
+            <ol class="days">
+                <li>
+                    <div class="date">
+                        1
+                    </div>
+                    <div class="event" onclick="changeCard('5','Monday','14:00-16:00','DataBase','Prof','www.google.com/')">
+                        Algebra
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        2
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        3
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        4
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        5
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        6
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        7
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        8
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        9
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        10
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        11
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        12
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        13
+                    </div>
+                    <div class="event all-day begin span-2" onclick="changeCard('13','Sunday','19:00-21:00','BCO','Orice','www.google.com/')">
+                        Event Name
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        14
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        15
+                    </div>
+                    <div class="event all-day end">
+                        Event Name
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        16
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        17
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        18
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        19
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        20
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        21
+                    </div>
+                    <div class="event">
+                        Event Name
+                    </div>
+                    <div class="event">
+                        Event Name
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        22
+                    </div>
+                    <div class="event span-2">
+                        Event with Longer Name
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        23
+                    </div>
+                    <div class="event clear">
+                        &nbsp;
+                    </div>
+                    <div class="event">
+                        Event Name
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        24
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        25
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        26
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        27
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        28
+                    </div>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+    <div class="container__responsive">
+
+        <div class="calendar__responsive">
+            <div class="card">
+                <div class="details__date">
+                    <h1 class="date">Date</h1>
+                    <h2 class="day">Day</h2>
+                </div>
+                <div class="details__subject">
+                    <h2 class="subject">Subject</h2>
+                    <h3 class="hour">Hour</h3>
+
+                </div>
+                <div class="details__link">
+                    <h2 class="teacher">Teacher</h2>
+                    <a href="" class="zoom-link" target="_blank">Zoom</a>
+                </div>
+
+
             </div>
-            <div class="event" onclick="changeCard('5','Monday','14:00-16:00','DataBase','Prof','www.google.com/')" >
-              Algebra
+
+            <div class="calendar__date">
+                <div class="calendar__day">M</div>
+                <div class="calendar__day">T</div>
+                <div class="calendar__day">W</div>
+                <div class="calendar__day">T</div>
+                <div class="calendar__day">F</div>
+                <div class="calendar__day">S</div>
+                <div class="calendar__day">S</div>
+                <div class="calendar__number"></div>
+                <div class="calendar__number"></div>
+                <div class="calendar__number"></div>
+                <div class="calendar__number">1</div>
+                <div class="calendar__number">2</div>
+                <div class="calendar__number">3</div>
+                <div class="calendar__number">4</div>
+                <div class="calendar__number">5</div>
+                <div class="calendar__number">6</div>
+                <div class="calendar__number">7</div>
+                <div class="calendar__number">8</div>
+                <div class="calendar__number">9</div>
+                <div class="calendar__number">10</div>
+                <div class="calendar__number">11</div>
+                <div class="calendar__number">12</div>
+                <div class="calendar__number">13</div>
+                <div class="calendar__number">14</div>
+                <div class="calendar__number">15</div>
+                <div class="calendar__number">16</div>
+                <div class="calendar__number">17</div>
+                <div class="calendar__number calendar__number--current" onclick="changeCard('5','Monday','14:00-16:00','DataBase','Prof','www.google.com/')">18</div>
+                <div class="calendar__number">19</div>
+                <div class="calendar__number">20</div>
+                <div class="calendar__number">21</div>
+                <div class="calendar__number">22</div>
+                <div class="calendar__number">23</div>
+                <div class="calendar__number">24</div>
+                <div class="calendar__number">25</div>
+                <div class="calendar__number">26</div>
+                <div class="calendar__number">27</div>
+                <div class="calendar__number">28</div>
+                <div class="calendar__number">29</div>
+                <div class="calendar__number">30</div>
             </div>
-          </li>
-          <li>
-            <div class="date">
-              2
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              3
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              4
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              5
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              6
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              7
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              8
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              9
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              10
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              11
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              12
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              13
-            </div>
-            <div class="event all-day begin span-2" onclick="changeCard('13','Sunday','19:00-21:00','BCO','Orice','www.google.com/')">
-              Event Name
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              14
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              15
-            </div>
-            <div class="event all-day end">
-              Event Name
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              16
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              17
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              18
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              19
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              20
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              21
-            </div>
-            <div class="event">
-              Event Name
-            </div>
-            <div class="event">
-              Event Name
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              22
-            </div>
-            <div class="event span-2">
-              Event with Longer Name
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              23
-            </div>
-            <div class="event clear">
-              &nbsp;
-            </div>
-            <div class="event">
-              Event Name
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              24
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              25
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              26
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              27
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              28
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              29
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              30
-            </div>
-          </li>
-          <li>
-            <div class="date">
-              31
-            </div>
-          </li>
-          <li class="outside">
-            <div class="date">
-              1
-            </div>
-          </li>
-          <li class="outside">
-            <div class="date">
-              2
-            </div>
-          </li>
-          <li class="outside">
-            <div class="date">
-              3
-            </div>
-          </li>
-          <li class="outside">
-            <div class="date">
-              4
-            </div>
-          </li>
-        </ol>
-      </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
